@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b9b8b8;
+    color: #000;
+}
+
+.card{
+    --color-primary: #1c35f4;
+    --color-border: #d0d0d6;
+    margin-top: 100px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 20px;
+    width: clamp(300px,85vw, 500px);
+}
+
+.hero,form{
+    flex: 1 1 50%;
+}
+.hero{
+    background: url("Imagenes/Fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.hero-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: inherit;
+    background: linear-gradient(rgb(95 69 168/0%), rgba(40, 43, 227, 0.416));
+    padding: 40px 66px;
+    height: 100%;
+    min-height: 170px;
+}
+
+.hero h2{
+    font-size: 22px;
+    color: black;
+}
+
+.hero h3{
+    margin-top: 12px;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    display: none;
+}
+
+form{
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form >h2{
+    color: var(--color-primary)
+}
+
+button,input{
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: inherit;
+    width: 100%;
+    outline-color: var(--color-primary);
+}
+
+input{
+    padding: 0 2.5vw;
+    width: 78%;
+}
+
+input::placeholder{
+    color: #9c99a4;    
+}
+
+.socials{
+    display: flex;
+    gap: 8px;
+    
+}
+
+.extra-text{
+    display: none;
+}
+
+.social-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #f2f3f6;
+}
+
+form > button[type="submit"]{
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 17px;
+}
+
+.or{
+    position: relative;
+    text-align: center;
+    height: 24px;
+}
+
+.or::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    translate: 0 -50%;
+    height: 1px;
+    background: var(--color-border);
+    opacity: 0.6;
+}
+
+.or::after{
+    content: "Or";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1;
+    background: #ffffff;
+    font-size: 12px;
+    padding: 0 12px;
+}
+
+@media(width >= 485px){
+    .card{
+        width: clamp(300px,90vw,740px);
+        margin-top: 100px;
+        margin-left: 350px;
+    }
+    form{
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .hero-inner{
+        padding-right: clamp(10px,20vw,60px);
+    }
+    .socials{
+        flex-direction: column;
+    }
+    .extra-text{
+        display: inline;
+    }
+}
+
+@media(width >=640px){
+    .card{
+        flex-direction: row;
+        padding: 8px 0 8px 8px;
+        margin-top: 100px;
+        margin-left: 350px;
+    }
+    form:is(h2,h3){
+        text-align: left;
+    }
+    .hero-inner{
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 36px;
+    }
+    .hero h3{
+        display: block;
+    }
+    form {
+        padding: 30px;
+    }
+}
+.icono {
+    width: 30px;
+    margin-right: 15px;
+}

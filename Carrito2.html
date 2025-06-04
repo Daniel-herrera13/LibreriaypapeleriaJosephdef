@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="shortcut icon" href="Imagenes sistema/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="Estilos css/Carrito.css">
+    <script src="Javascrpits/Carrito.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Imagenes sistema/logo2.png" alt="Logo" class="logoimg">
+    </div>
+    <nav class="cambio">
+      <a href="Inicio2.html">Inicio</a>
+      <a href="Catalogoprincipal.html">Catálogo</a>
+      <a href="Nuestros contactos2.html">Contáctanos</a>
+    </nav>
+    <div class="iconos-header">
+      <img src="Imagenes/carrito.png" alt="carrito" class="icono-noti" >
+      <a href="Notificaciones2.html"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="icono-noti"></a>
+      <div class="perfil-usuario">
+        <a href="Usuario.html"><img src="Imagenes sistema/Usuario .jpg" alt="Usuario"></a>
+        <span class="estado-online"></span>
+      </div>
+    </div>
+  </header>
+
+  <main >
+    <h1 class="titulo">Carrito de Compras</h1>
+    <div class="ventajas">
+      <div class="card">
+        <h3>Cuaderno Profesional</h3>
+        <p>Cuaderno de 100 hojas rayadas</p>
+        <button class="btn1 add-to-cart" data-nombre="Cuaderno Profesional">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <h3>Lápiz HB</h3>
+        <p>Lápiz de grafito de alta calidad</p>
+        <button class="btn1 add-to-cart" data-nombre="Lápiz HB">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <h3>Resaltador Amarillo</h3>
+        <p>Ideal para subrayar textos</p>
+        <button class="btn1 add-to-cart" data-nombre="Resaltador Amarillo">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <div class="carrito">
+      <h3>Carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <button id="finalizarCompra" class="btn-finalizar">Finalizar compra</button>
+    </div>
+  </main>
+
+
+</body>
+</html>
