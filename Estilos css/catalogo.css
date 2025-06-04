@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.catalogo h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.categoria {
+  margin-bottom: 40px;
+}
+
+.categoria h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px; 
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.producto {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1 1 150px;
+  text-align: center;
+}
+.titule {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-top: 10px;
+  }
+  /*prueba*/
+  .cambio a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+  }
+  
+  .cambio a.activo {
+    font-weight: bold;
+    color: #7b9cff; 
+    border-bottom: 2px solid #7b9cff;
+  }
+
+

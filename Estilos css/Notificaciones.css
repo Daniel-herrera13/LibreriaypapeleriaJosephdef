@@ -1,0 +1,45 @@
+body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .notificaciones-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .notificacion-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .notificacion-item:last-child {
+      border-bottom: none;
+    }
+
+    .notificacion-icon {
+      font-size: 1.8rem;
+      color: #0d6efd;
+      margin-right: 15px;
+    }
+
+    .notificacion-texto {
+      flex: 1;
+    }
+
+    .notificacion-hora {
+      font-size: 0.85rem;
+      color: #6c757d;
+    }
+
+    .titulo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }

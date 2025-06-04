@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .logoimg {
+    width: 70px;
+    height: 60px;
+
+}
+  
+  nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .iconos-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icono-noti {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .perfil-usuario {
+    position: relative;
+  }
+  
+  .perfil-usuario img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .estado-online {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #00C851;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .foto-usuario {
+    border: 5px solid #00C851;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .foto-usuario img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .info-usuario .estado {
+    color: #00C851;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .info-usuario h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .info-usuario p {
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .btn-editar {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.btn-cerrar{
+  background-color: #f2f2f2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
